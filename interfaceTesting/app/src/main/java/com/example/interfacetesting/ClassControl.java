@@ -6,7 +6,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * Implement the abstract interface methods
+ * Implement and overriding the abstract interface methods
  */
 
 public class ClassControl implements InterfaceMethods {
@@ -19,7 +19,9 @@ public class ClassControl implements InterfaceMethods {
 
     @Override
     public int printAccountNumber(int accNumber) {
-          return accNumber;
+              int toSub = 2052187;
+
+        return accNumber + toSub;
     }
 }
 

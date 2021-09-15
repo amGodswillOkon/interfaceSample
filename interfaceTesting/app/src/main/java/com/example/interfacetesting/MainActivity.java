@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity  {
          */
         interfaceMethods.printName();
 
-        int accountNumber = interfaceMethods.printAccountNumber(2052187);
-        Toast.makeText(getApplicationContext(),  String.valueOf( "my Account Number is: " + accountNumber), Toast.LENGTH_SHORT).show();
+        int accountNumber = interfaceMethods.printAccountNumber(1);
+        Toast.makeText(getApplicationContext(), "my Account Number is: " + accountNumber, Toast.LENGTH_LONG).show();
 
       }
 }
+
+
