@@ -20,7 +20,7 @@ public class ClassControl implements InterfaceMethods {
 
     @Override
     public void printAccountNumber(long accNumber) {
-        Log.d(String.valueOf(accNumber), " is being the account number");
+        Log.d(String.valueOf(accNumber), " is my the account number");
 
     }
 }
