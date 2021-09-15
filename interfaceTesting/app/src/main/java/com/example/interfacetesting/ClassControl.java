@@ -1,10 +1,8 @@
 package com.example.interfacetesting;
 
-import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -12,16 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 
 public class ClassControl implements InterfaceMethods {
-    @Override
+
+          @Override
     public void printName () {
          String name = "Godswill Okon ";
-        Log.d(name, "is my name");
+         Log.d(name, "is my name");
     }
 
     @Override
-    public void printAccountNumber(long accNumber) {
-        Log.d(String.valueOf(accNumber), " is my account number");
-
+    public int printAccountNumber(int accNumber) {
+          return accNumber;
     }
 }
 

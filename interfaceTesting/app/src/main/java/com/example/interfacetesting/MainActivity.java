@@ -2,14 +2,15 @@ package com.example.interfacetesting;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
+/**
+ * Simple code to demonstrates how interface is used in Java
+ */
+
 
 public class MainActivity extends AppCompatActivity  {
-
-    /**
-     * Simple code to demonstrates how interface is used in Java
-     */
 
     InterfaceMethods interfaceMethods = new ClassControl();
 
@@ -18,8 +19,13 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        interfaceMethods.printAccountNumber(20521878744L);
+        /**
+         * calling the (interface) methods
+         */
         interfaceMethods.printName();
+
+        int accountNumber = interfaceMethods.printAccountNumber(2052187);
+        Toast.makeText(getApplicationContext(),  String.valueOf( "my Account Number is: " + accountNumber), Toast.LENGTH_SHORT).show();
 
       }
 }

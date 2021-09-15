@@ -6,5 +6,5 @@ public interface InterfaceMethods {
      */
     void printName();
 
-    void printAccountNumber(long accNumber);
+    int printAccountNumber(int accNumber);
 }
